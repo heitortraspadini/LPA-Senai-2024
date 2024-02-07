@@ -9,3 +9,5 @@
 - [x] Aula 04 - Introdução ao GitHub (07/02/2024)
   - Criação do perfil no GitHub
   
+
+PALMEIRAS É UM BANDO DE PALHAÇO
