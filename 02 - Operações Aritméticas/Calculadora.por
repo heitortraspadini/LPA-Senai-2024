@@ -1,18 +1,60 @@
 programa
 {
+	funcao Operacao(cadeia tecla1)	
+	{
+	}
 	
 	funcao inicio()
 	{
-		inteiro n1, n2
-
-		escreva("Digite o 1º número: ")
-		leia(n1)
-
-		escreva("Digite o 2º número: ")
-		leia(n2)
-
-		escreva("A soma entre esses dois números é de: ", n1 + n2)
+		cadeia t1
 		
+		escreva("Adição: +\nSubtração: -\nDivisão: /\nMultiplicação: *\nQual operação matemática você deseja realizar?\n")
+		leia(t1)
+
+		se (t1 == "+")
+		{
+			real num1, num2, resultado
+			
+			escreva("Primeiro número: ")
+			leia(num1)
+			escreva("Segundo número: ")
+			leia(num2)
+			resultado = num1 + num2
+			escreva("O resultado é: ", resultado)
+		}
+		se (t1 == "-")
+		{
+			real num1, num2, resultado
+			
+			escreva("Primeiro número: ")
+			leia(num1)
+			escreva("Segundo número: ")
+			leia(num2)
+			resultado = num1 - num2
+			escreva("Resultado: ", resultado)
+		}
+		se (t1 == "*")
+		{
+			real num1, num2, resultado
+			
+			escreva("Primeiro número: ")
+			leia(num1)
+			escreva("Segundo número: ")
+			leia(num2)
+			resultado = num1 * num2
+			escreva("Resultado: ", resultado)
+		}
+		se (t1 == "/")
+		{
+			real num1, num2, resultado
+			
+			escreva("Primeiro número: ")
+			leia(num1)
+			escreva("Segundo número: ")
+			leia(num2)
+			resultado = num1 / num2
+			escreva("Resultado: ", resultado)
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -20,7 +62,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 218; 
+ * @POSICAO-CURSOR = 215; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
