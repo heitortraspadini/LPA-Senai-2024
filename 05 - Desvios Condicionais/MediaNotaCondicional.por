@@ -18,6 +18,9 @@ programa
 		leia(n3)
 
 		media = mat.arredondar((n1 + n2 + n3)/3, 1)
+
+		limpa()
+		
 		escreva("A média do aluno é de: ", media, "\n")
 		se (media > 10)
 		{
@@ -32,11 +35,11 @@ programa
 			}
 			senao se (media >= 5 e media < 7)
 			{
-				escreva("DOENTE, você está de recuperação.")	
+				escreva("Não passou, tente novamente mais tarde.")	
 			}
 			senao se (media < 5)
 			{
-				escreva("LIXO HUMANO, você repetiu de ano.")	
+				escreva("BOBALHÃO, você repetiu de ano.")	
 			}
 		}
 	}
@@ -46,7 +49,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 756; 
+ * @POSICAO-CURSOR = 376; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
