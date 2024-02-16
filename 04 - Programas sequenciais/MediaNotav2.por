@@ -1,5 +1,5 @@
 /*
- * Algoritmo: Idade
+ * Algoritmo: Idade v2
  * @Heitor Traspadini
  * Data: 16/02/2024
  */
@@ -20,7 +20,7 @@ programa
 		}
 		senao
 		{
-			escreva("Você já pod")
+			escreva("Você já pode ir em bloquinhos de carnaval")
 		}
 	}
 }
@@ -29,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 274; 
+ * @POSICAO-CURSOR = 25; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
