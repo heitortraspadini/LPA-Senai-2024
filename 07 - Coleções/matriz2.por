@@ -35,11 +35,26 @@ programa
 	}
 	funcao exibir(real coordenadas[][])
 	{
+		escreva("Latitude\tLongitude\t\n")
+		escreva("========        =========\n")
 		para (inteiro i = 0; i < u.numero_linhas(coordenadas); i++)
 		{
 			para (inteiro o = 0; o < u.numero_colunas(coordenadas); o++)
-			{
-				escreva(coordenadas[i][o], "\t")
+			{	
+				real coordenada = coordenadas[i][o]
+				se(coordenada >= 0)
+				{
+					escreva(" ")
+				}
+				se(coordenada < 10 e coordenadas[i][o] > -10)
+				{
+					escreva(" ")
+				}
+				se(coordenada < 100 e coordenadas[i][o] > -100)
+				{
+					escreva(" ")
+				}
+				escreva(coordenadas[i][o], "\t\t")
 			}
 			escreva("\n")
 		}
@@ -50,7 +65,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 62; 
+ * @POSICAO-CURSOR = 1134; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
