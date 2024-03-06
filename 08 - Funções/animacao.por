@@ -1,5 +1,5 @@
 /*
- * Algoritmo: Prática
+ * Algoritmo: Lagarta
  * @Heitor Traspadini
  * Data: 06/03/2024
  */
@@ -21,21 +21,51 @@ programa
 				se(andando == 0)
 				{
 					inteiro brancos = 1
-					inteiro quantidade = coluna * 3 + 7
+					inteiro quantidade = coluna * 3 + 14
+					enquanto(brancos <= quantidade)
+					{
+						escreva(" ")
+						brancos++
+					}
+					escreva("\\ /\n")
+					brancos = 1
+					quantidade = coluna * 3
+					enquanto(brancos <= quantidade)
+					{
+						escreva(" ")
+						brancos++
+					}
+					escreva("( )( )( )( )( 0,0 )")
+				}
+				senao
+				{
+					inteiro brancos = 1
+					inteiro quantidade = coluna * 3 + 11
+				
 					enquanto(brancos <= quantidade)
 					{
 						escreva(" ")
 						brancos++
 					}
 					escreva("( )")
+					brancos = 1
 					quantidade = 4
 					enquanto(brancos <= quantidade)
 					{
 						escreva(" ")
 						brancos++
 					}
+					escreva("\\/\n")
+					brancos = 1
+					quantidade = coluna * 3 + 2
+					enquanto(brancos <= quantidade)
+					{
+						escreva(" ")
+						brancos++
+					}
+					escreva("( )( )( )  ( )( 0,0 )")
 				}
-				u.aguarde(200)
+				u.aguarde(320)
 			}
 		}
 	}
@@ -45,7 +75,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 714; 
+ * @POSICAO-CURSOR = 24; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
