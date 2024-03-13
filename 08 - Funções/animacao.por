@@ -6,7 +6,7 @@
 
 programa
 {
-	inclua biblioteca Util --> u
+	inclua biblioteca Util --> u
 	
 	funcao inicio()
 	{
@@ -20,53 +20,31 @@ programa
 				limpa()
 				se(andando == 0)
 				{
-					inteiro brancos = 1
-					inteiro quantidade = coluna * 3 + 14
-					enquanto(brancos <= quantidade)
-					{
-						escreva(" ")
-						brancos++
-					}
+					branco(coluna * 3 + 14)
 					escreva("\\ /\n")
-					brancos = 1
-					quantidade = coluna * 3
-					enquanto(brancos <= quantidade)
-					{
-						escreva(" ")
-						brancos++
-					}
-					escreva("( )( )( )( )( 0,0 )")
+					branco(coluna *3)
+					escreva("( )( )( )( )( 0.0 )")
 				}
 				senao
 				{
-					inteiro brancos = 1
-					inteiro quantidade = coluna * 3 + 11
-				
-					enquanto(brancos <= quantidade)
-					{
-						escreva(" ")
-						brancos++
-					}
+					branco((coluna * 3) + 5)
 					escreva("( )")
-					brancos = 1
-					quantidade = 4
-					enquanto(brancos <= quantidade)
-					{
-						escreva(" ")
-						brancos++
-					}
-					escreva("\\/\n")
-					brancos = 1
-					quantidade = coluna * 3 + 2
-					enquanto(brancos <= quantidade)
-					{
-						escreva(" ")
-						brancos++
-					}
-					escreva("( )( )( )  ( )( 0,0 )")
+					branco(4)
+					escreva("\\ /\n")
+					branco(coluna * 3)
+					escreva("( )( ) ( )( 0.0 )")
 				}
-				u.aguarde(320)
+				u.aguarde(500)
 			}
+		}
+	}
+	funcao branco(inteiro quantidade)
+	{
+		inteiro brancos = 1
+		enquanto(brancos <= quantidade)
+		{
+			escreva(" ")
+			brancos++
 		}
 	}
 }
@@ -75,7 +53,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 24; 
+ * @POSICAO-CURSOR = 711; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
