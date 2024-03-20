@@ -1,3 +1,8 @@
+/*
+ * Algoritmo: Vetor
+ * @HeitorTraspadini
+ * 15/03/2024
+ */
 programa
 {
 	inclua biblioteca Util --> u
@@ -27,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 303; 
+ * @POSICAO-CURSOR = 49; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
